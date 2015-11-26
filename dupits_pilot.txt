@@ -1,0 +1,27 @@
+prototyp dupits - duplikationsfinnare.
+
+förutsättning / begränsningar.
+
+- Python
+- entr + unittest
+- endast en fil ska scannas
+(- O(n*m*m), n antal filer och m medel antal rader.)
+- kommer köra fullständing chunkning av filen
+   d.v.s. kontrollerar alla möjliga delsträngar av hela filen
+- inga filter
+
+#include <stdio.h>
+#include <stlib.h>
+
+....
+
+---->
+
+{"text":"#include <st","pos":[0, 19]}
+{"text":"#include <st","pos":[0, 19, 200]}
+{"text":"#include <st","pos":[0, 19, 200, 450]}
+dup(n, c) = n * c där n är chunk-längden, och c är antalet.
+
+Programmet presenterar den chunk med störst duplicering.
+
+
